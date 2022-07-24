@@ -1,3 +1,11 @@
+-- Autocommand that reloads neovim whenever you save the plugins.lua file
+vim.cmd([[
+  augroup packer_user_config
+    autocmd!
+    autocmd BufWritePost plugins.lua source <afile> | PackerSync
+  augroup end
+]])
+
 local function get_config(name)
   return string.format('require("config/%s")', name)
 end
@@ -5,7 +13,9 @@ end
 return require("packer").startup(function(use)
   use("wbthomason/packer.nvim")
 
-  use 'ful1e5/onedark.nvim'
+  use 'lewis6991/impatient.nvim'
+
+  use("ful1e5/onedark.nvim")
 
   use({ "nvim-lualine/lualine.nvim", config = get_config("lualine") })
 
@@ -26,8 +36,7 @@ return require("packer").startup(function(use)
     "hrsh7th/nvim-cmp",
     requires = {
       "hrsh7th/cmp-nvim-lsp",
-      "hrsh7th/cmp-buffer",
-      "hrsh7th/cmp-cmdline",
+      "hrsh7th/cmp-buffer", "hrsh7th/cmp-cmdline",
       "saadparwaiz1/cmp_luasnip",
       "L3MON4D3/LuaSnip",
       "rafamadriz/friendly-snippets",
@@ -41,7 +50,8 @@ return require("packer").startup(function(use)
   use("p00f/nvim-ts-rainbow")
 
   use("tpope/vim-commentary")
-  use("tpope/vim-surround")
+  use 'JoosepAlviste/nvim-ts-context-commentstring'
+  use({ "kylechui/nvim-surround", config = get_config("surround") })
 
   use({
     "glacambre/firenvim",
@@ -68,4 +78,8 @@ return require("packer").startup(function(use)
   use({ "jose-elias-alvarez/null-ls.nvim", config = get_config("null-ls") })
 
   use({ "norcalli/nvim-colorizer.lua", config = get_config("colorizer") })
+
+  use("lewis6991/gitsigns.nvim")
+
+  use "github/copilot.vim"
 end)
