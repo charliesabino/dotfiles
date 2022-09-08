@@ -118,6 +118,7 @@ export EDITOR='nvim'
 alias nv="nvim"
 alias c="clear"
 alias ls="lsd"
+alias ..="cd .."
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
@@ -129,8 +130,8 @@ alias ls="lsd"
 . ~/z.sh
 
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
-neofetch
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export PATH=$PATH:/Users/charliesabino/.spicetify

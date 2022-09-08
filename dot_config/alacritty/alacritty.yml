@@ -1,5 +1,5 @@
 window:
-  opacity: 0.85
+  opacity: .8
   padding:
     x: 18
     y: 16
@@ -16,40 +16,70 @@ font:
 mouse:
   hide_when_typing: true
 
-# onedark Alacritty Colors
-colors:
-  # Default colors
-  primary:
-    background: '0x282c34'
-    foreground: '0xabb2bf'
+key_bindings:
+  - { key: Comma, mods: Command, chars: "\x02," }
+  - { key: D, mods: Command, chars: "\x02K" }
+  - { key: F, mods: Command, chars: "lfcd\n" }
+  - { key: P, mods: Command, chars: ":lua require'telescope.builtin'.git_files{}\n" }
+  - { key: G, mods: Command, chars: "\x02g" }
+  - { key: K, mods: Command, chars: "\x02s" }
+  - { key: Key1, mods: Command, chars: "\x021" }
+  - { key: Key2, mods: Command, chars: "\x022" }
+  - { key: Key3, mods: Command, chars: "\x023" }
+  - { key: Key4, mods: Command, chars: "\x024" }
+  - { key: Key5, mods: Command, chars: "\x025" }
+  - { key: Key6, mods: Command, chars: "\x026" }
+  - { key: Key7, mods: Command, chars: "\x027" }
+  - { key: Key8, mods: Command, chars: "\x028" }
+  - { key: Key9, mods: Command, chars: "\x029" }
+  - { key: L, mods: Command, chars: "\x02L" }
+  - { key: LBracket, mods: Command, chars: "\x02[" }
+  - { key: LBracket, mods: Command|Shift, chars: "\x02p" }
+  - { key: E, mods: Command|Shift, chars: "\x02%" }
+  - { key: E, mods: Command, chars: "\x02\"" }
+  - { key: Q, mods: Command, chars: "\x02d" }
+  - { key: RBracket, mods: Command|Shift, chars: "\x02n" }
+  - { key: S, mods: Command, chars: "\e:w\n" }
+  - { key: Semicolon, mods: Command, chars: "\x02:" }
+  - { key: T, mods: Command, chars: "\x02c" }
+  - { key: T, mods: Command|Shift, chars: "\x02!" }
+  - { key: W, mods: Command, chars: "\x02x" }
+  - { key: Z, mods: Command, chars: "\x02z" }
 
-  # Selection colors
-  selection:
-    text:       CellForeground
-    background: '0x393f4a'
+# # onedark Alacritty Colors
+# colors:
+#   # Default colors
+#   primary:
+#     background: '0x282c34'
+#     foreground: '0xabb2bf'
 
-  # Normal colors
-  normal:
-    black:   '0x20232A'
-    red:     '0xe06c75'
-    green:   '0x98c379'
-    yellow:  '0xebd09c'
-    blue:    '0x61afef'
-    magenta: '0xc678dd'
-    cyan:    '0x56b6c2'
-    white:   '0x798294'
+#   # Selection colors
+#   selection:
+#     text:       CellForeground
+#     background: '0x393f4a'
 
-  # Bright colors
-  bright:
-    black:   '0x798294'
-    red:     '0xe86671'
-    green:   '0x98c379'
-    yellow:  '0xe5c07b'
-    blue:    '0x528bff'
-    magenta: '0xc678dd'
-    cyan:    '0x56b6c2'
-    white:   '0xabb2bf'
+#   # Normal colors
+#   normal:
+#     black:   '0x20232A'
+#     red:     '0xe06c75'
+#     green:   '0x98c379'
+#     yellow:  '0xebd09c'
+#     blue:    '0x61afef'
+#     magenta: '0xc678dd'
+#     cyan:    '0x56b6c2'
+#     white:   '0x798294'
 
-  indexed_colors:
-    - { index: 16, color: '0xd19a66' }
-    - { index: 17, color: '0xf65866' }
+#   # Bright colors
+#   bright:
+#     black:   '0x798294'
+#     red:     '0xe86671'
+#     green:   '0x98c379'
+#     yellow:  '0xe5c07b'
+#     blue:    '0x528bff'
+#     magenta: '0xc678dd'
+#     cyan:    '0x56b6c2'
+#     white:   '0xabb2bf'
+
+#   indexed_colors:
+#     - { index: 16, color: '0xd19a66' }
+#     - { index: 17, color: '0xf65866' }
