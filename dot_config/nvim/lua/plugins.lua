@@ -12,17 +12,14 @@ end
 
 return require("packer").startup(function(use)
 	use("wbthomason/packer.nvim")
-
 	use("lewis6991/impatient.nvim")
+	use("nvim-lua/plenary.nvim")
 
 	use("ful1e5/onedark.nvim")
 
 	use({ "nvim-lualine/lualine.nvim", config = get_config("lualine") })
-
 	use({ "rcarriga/nvim-notify", config = get_config("notify") })
-
 	use({ "kyazdani42/nvim-tree.lua", config = get_config("nvim-tree") })
-
 	use({ "glepnir/dashboard-nvim", config = get_config("dashboard") })
 
 	use("kyazdani42/nvim-web-devicons")
@@ -30,7 +27,8 @@ return require("packer").startup(function(use)
 	use({ "lukas-reineke/indent-blankline.nvim", config = get_config("indent-blankline") })
 
 	use({ "neovim/nvim-lspconfig", config = get_config("lsp") })
-	use({ "williamboman/nvim-lsp-installer", config = get_config("lsp") })
+	use({ "williamboman/mason.nvim", config = get_config("mason") })
+	use({ "williamboman/mason-lspconfig.nvim", config = get_config("mason-lspconfig") })
 
 	use({
 		"hrsh7th/nvim-cmp",
@@ -44,7 +42,7 @@ return require("packer").startup(function(use)
 		},
 		config = get_config("cmp"),
 	})
-	use("nvim-lua/plenary.nvim")
+
 	use({ "nvim-telescope/telescope.nvim", config = get_config("telescope") })
 
 	use({ "nvim-treesitter/nvim-treesitter", config = get_config("treesitter") })
@@ -70,14 +68,15 @@ return require("packer").startup(function(use)
 			require("nvim-autopairs").setup({})
 		end,
 	})
+
 	use({ "windwp/nvim-ts-autotag", config = get_config("ts-autotag") })
 
 	use({ "akinsho/toggleterm.nvim", tag = "v1.*", config = get_config("toggleterm") })
 	use({ "akinsho/bufferline.nvim", tag = "v2.*", config = get_config("bufferline") })
+
 	use("moll/vim-bbye")
 
 	use({ "jose-elias-alvarez/null-ls.nvim", config = get_config("null-ls") })
-
 
 	use({ "lewis6991/gitsigns.nvim", config = get_config("gitsigns") })
 
@@ -105,4 +104,6 @@ return require("packer").startup(function(use)
 			})
 		end,
 	})
+
+	use({ "akinsho/flutter-tools.nvim", config = get_config("flutter-tools"), requires = "nvim-lua/plenary.nvim" })
 end)
