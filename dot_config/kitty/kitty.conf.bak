@@ -2175,7 +2175,7 @@ include current-theme.conf
 font_family SFMono Nerd Font
 font_size 20
 
-opacity .85
+opacity 1.0
 
 cursor_shape block
 

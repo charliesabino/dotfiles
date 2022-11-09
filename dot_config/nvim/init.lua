@@ -1,5 +1,0 @@
-require('impatient')
-require('settings')
-require('plugins')
-require('mappings')
-require('colorschemes.onedark')

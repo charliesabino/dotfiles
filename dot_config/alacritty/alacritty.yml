@@ -1,14 +1,18 @@
+selection:
+  semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
+  save_to_clipboard: true
+
 window:
   opacity: .8
   padding:
-    x: 18
-    y: 16
+    x: 10
+    y: 10
   dynamic_padding: false
   decorations: none
 
 font:
   normal:
-    family: 'SFMono Nerd Font'
+    family: "SFMono Nerd Font"
     style: Regular
   size: 20.0
   use_thin_strokes: true
@@ -20,7 +24,11 @@ key_bindings:
   - { key: Comma, mods: Command, chars: "\x02," }
   - { key: D, mods: Command, chars: "\x02K" }
   - { key: F, mods: Command, chars: "lfcd\n" }
-  - { key: P, mods: Command, chars: ":lua require'telescope.builtin'.git_files{}\n" }
+  - {
+      key: P,
+      mods: Command,
+      chars: ":lua require'telescope.builtin'.git_files{}\n",
+    }
   - { key: G, mods: Command, chars: "\x02g" }
   - { key: K, mods: Command, chars: "\x02s" }
   - { key: Key1, mods: Command, chars: "\x021" }
@@ -46,40 +54,40 @@ key_bindings:
   - { key: W, mods: Command, chars: "\x02x" }
   - { key: Z, mods: Command, chars: "\x02z" }
 
-# # onedark Alacritty Colors
-# colors:
-#   # Default colors
-#   primary:
-#     background: '0x282c34'
-#     foreground: '0xabb2bf'
+# onedark Alacritty Colors
+colors:
+  # Default colors
+  primary:
+    background: "0x282c34"
+    foreground: "0xabb2bf"
 
-#   # Selection colors
-#   selection:
-#     text:       CellForeground
-#     background: '0x393f4a'
+  # Selection colors
+  selection:
+    text: CellForeground
+    background: "0x393f4a"
 
-#   # Normal colors
-#   normal:
-#     black:   '0x20232A'
-#     red:     '0xe06c75'
-#     green:   '0x98c379'
-#     yellow:  '0xebd09c'
-#     blue:    '0x61afef'
-#     magenta: '0xc678dd'
-#     cyan:    '0x56b6c2'
-#     white:   '0x798294'
+  # Normal colors
+  normal:
+    black: "0x20232A"
+    red: "0xe06c75"
+    green: "0x98c379"
+    yellow: "0xebd09c"
+    blue: "0x61afef"
+    magenta: "0xc678dd"
+    cyan: "0x56b6c2"
+    white: "0x798294"
 
-#   # Bright colors
-#   bright:
-#     black:   '0x798294'
-#     red:     '0xe86671'
-#     green:   '0x98c379'
-#     yellow:  '0xe5c07b'
-#     blue:    '0x528bff'
-#     magenta: '0xc678dd'
-#     cyan:    '0x56b6c2'
-#     white:   '0xabb2bf'
+  # Bright colors
+  bright:
+    black: "0x798294"
+    red: "0xe86671"
+    green: "0x98c379"
+    yellow: "0xe5c07b"
+    blue: "0x528bff"
+    magenta: "0xc678dd"
+    cyan: "0x56b6c2"
+    white: "0xabb2bf"
 
-#   indexed_colors:
-#     - { index: 16, color: '0xd19a66' }
-#     - { index: 17, color: '0xf65866' }
+  indexed_colors:
+    - { index: 16, color: "0xd19a66" }
+    - { index: 17, color: "0xf65866" }
