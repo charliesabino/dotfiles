@@ -1,0 +1,78 @@
+live_config_reload = true
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 20.0
+
+[font.bold]
+family = "Liga SFMono Nerd Font"
+style = "Heavy"
+
+[font.bold_italic]
+family = "Liga SFMono Nerd Font"
+style = "Heavy Italic"
+
+[font.italic]
+family = "Liga SFMono Nerd Font"
+style = "Medium Italic"
+
+[font.normal]
+family = "Liga SFMono Nerd Font"
+style = "Medium"
+
+[[keyboard.bindings]]
+chars = "\u0002c"
+key = "T"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u0002n"
+key = "}"
+mods = "Command|Shift"
+
+[[keyboard.bindings]]
+chars = "\u0002p"
+key = "{"
+mods = "Command|Shift"
+
+[[keyboard.bindings]]
+chars = "\u0002x"
+key = "w"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u0002o"
+key = "k"
+mods = "Command"
+
+[window]
+decorations = "buttonless"
+dynamic_padding = true
+# opacity = 0.9
+# blur = true
+
+[window.padding]
+x = 15
+y = 15
+
+
+# Default colors
+[colors.primary]
+background = '#282c34'
+foreground = '#bbc2cf'
+
+# Normal colors
+[colors.normal]
+black   = '#282c34'
+red     = '#ff6c6b'
+green   = '#98be65'
+yellow  = '#ecbe7b'
+blue    = '#51afef'
+magenta = '#c678dd'
+cyan    = '#46d9ff'
+white   = '#bbc2cf'
+
+[colors]
+transparent_background_colors = true
