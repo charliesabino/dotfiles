@@ -18,9 +18,9 @@ brew install lazygit
 brew install lsd
 brew install zoxide
 brew install neovim
+brew install fzf
+brew install bat
 brew install --cask nikitabobko/tap/aerospace
 brew install --cask raycast
 brew install --cask alacritty
 brew install --cask zoom
-
-
