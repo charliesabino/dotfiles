@@ -10,6 +10,7 @@ brew analytics off
 defaults write com.apple.dock static-only -bool true; killall Dock
 defaults write -g InitialKeyRepeat -int 10
 defaults write -g KeyRepeat -int 1
+defaults write -g ApplePressAndHoldEnabled -bool false
 
 brew install starship
 brew install ripgrep
