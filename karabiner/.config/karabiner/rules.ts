@@ -63,6 +63,7 @@ const rules: KarabinerRules[] = [
     // o = "Open" applications
     o: {
       s: app("Superhuman"),
+      a: app("Anki"),
       t: app("Alacritty"),
       c: app("Notion Calendar"),
       b: app("Arc"),
@@ -70,7 +71,6 @@ const rules: KarabinerRules[] = [
       n: app("Notes"),
       i: app("Messages"),
       m: open("applenotes://showNote?identifier=9382DE40-DC79-4F38-8601-CF72F8D68648"),
-      a: open("Anki"),
     },
 
 
@@ -147,21 +147,21 @@ const rules: KarabinerRules[] = [
       },
     },
 
+    h: {
+      to: [{ key_code: "left_arrow" }],
+    },
+    j: {
+      to: [{ key_code: "down_arrow" }],
+    },
+    k: {
+      to: [{ key_code: "up_arrow" }],
+    },
+    l: {
+      to: [{ key_code: "right_arrow" }],
+    },
     // v = "moVe" which isn't "m" because we want it to be on the left hand
     // so that hjkl work like they do in vim
     v: {
-      h: {
-        to: [{ key_code: "left_arrow" }],
-      },
-      j: {
-        to: [{ key_code: "down_arrow" }],
-      },
-      k: {
-        to: [{ key_code: "up_arrow" }],
-      },
-      l: {
-        to: [{ key_code: "right_arrow" }],
-      },
       // Scroll mode via homerow.app
       s: {
         to: [{ key_code: "j", modifiers: ["right_control"] }],
