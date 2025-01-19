@@ -166,7 +166,6 @@ alt-shift-tab = 'move-workspace-to-monitor --wrap-around next'
 # See: https://nikitabobko.github.io/AeroSpace/commands#mode
 alt-shift-semicolon = 'mode service'
 
-
 # 'service' binding mode declaration.
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
 [mode.service.binding]
@@ -225,3 +224,6 @@ alt-shift-l = ['join-with right', 'mode main']
     if.during-aerospace-startup = false
     # check-further-callbacks = true
     run = ['move-node-to-workspace 4']
+
+[workspace-to-monitor-force-assignment]
+    9 = 'secondary'
