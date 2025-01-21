@@ -964,7 +964,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "j",
+                                        "key_code": "f",
                                         "modifiers": ["right_control"]
                                     }
                                 ],
