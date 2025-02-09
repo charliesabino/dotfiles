@@ -27,6 +27,7 @@ brew install fzf
 brew install bat
 brew install bitwarden-cli
 brew install yazi
+brew install docker
 brew install ipython
 brew tap FelixKratz/formulae
 brew install borders

@@ -20,6 +20,10 @@ alias checklinux='for i in 1 2 3 4 5 6 7; do echo -n "linux$i: "; ssh sabinoc@li
 alias t="tmux"
 alias ta="tmux attach-session"
 alias td="tmux det"
+alias nk='NVIM_APPNAME=kickstart-nvim nvim' # Kickstart
+alias sz='source ~/.zshrc'
+alias ez='nv ~/.zshrc'
+
 # alias tn="tmux new -s (pwd | sed 's/.*\///g')"
 # alias mkcd='mkdir -p "$1" && cd "$1"'
 tn() { tmux new -s "$(pwd | sed 's/.*\///g')"; }
@@ -34,7 +38,7 @@ function y() {
 
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
-eval "$(gh copilot alias -- zsh)"
+
 
 
 export PATH="/Users/charliesabino/.local/bin:$PATH"
@@ -44,3 +48,11 @@ autoload -Uz compinit
 compinit
 export PATH="/opt/homebrew/opt/protobuf@21/bin:$PATH"
 export PATH="/opt/homebrew/opt/protobuf@21/bin:$PATH"
+
+. "$HOME/.atuin/bin/env"
+
+eval "$(atuin init zsh --disable-up-arrow)"
+
+if [ -f ~/.env ]; then
+  source ~/.env
+fi
