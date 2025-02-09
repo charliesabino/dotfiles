@@ -21,6 +21,7 @@ alias t="tmux"
 alias ta="tmux attach-session"
 alias td="tmux det"
 alias nk='NVIM_APPNAME=kickstart-nvim nvim' # Kickstart
+alias nl='NVIM_APPNAME=lazy_nvim nvim'
 alias sz='source ~/.zshrc'
 alias ez='nv ~/.zshrc'
 
