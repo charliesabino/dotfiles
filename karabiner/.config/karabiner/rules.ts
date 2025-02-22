@@ -164,7 +164,7 @@ const rules: KarabinerRules[] = [
     v: {
       // Scroll mode via homerow.app
       s: {
-        to: [{ key_code: "f", modifiers: ["right_control"] }],
+        to: [{ key_code: "f", modifiers: ["shift", "right_control"] }],
       },
       u: {
         to: [{ key_code: "page_down" }],
