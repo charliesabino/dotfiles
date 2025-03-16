@@ -68,9 +68,9 @@ const rules: KarabinerRules[] = [
       c: app("Notion Calendar"),
       b: app("Arc"),
       f: app("Finder"),
-      n: app("Notes"),
+      n: app("Obsidian"),
       i: app("Messages"),
-      m: open("applenotes://showNote?identifier=9382DE40-DC79-4F38-8601-CF72F8D68648"),
+      m: open("obsidian://open?path=%2FUsers%2Fcharliesabino%2Fbino%2Fworking_memory"),
     },
 
 
