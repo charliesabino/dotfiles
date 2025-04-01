@@ -112,13 +112,7 @@ const rules: KarabinerRules[] = [
           },
         ],
       },
-      p: {
-        to: [
-          {
-            key_code: "play_or_pause",
-          },
-        ],
-      },
+      p: open("raycast://extensions/mattisssa/spotify-player/togglePlayPause"),
       semicolon: {
         to: [
           {
@@ -130,9 +124,9 @@ const rules: KarabinerRules[] = [
         `raycast://extensions/thomas/elgato-key-light/toggle?launchType=background`
       ),
       // "D"o not disturb toggle
-      d: open(
-        `raycast://extensions/yakitrak/do-not-disturb/toggle?launchType=background`
-      ),
+      // d: open(
+      //   `raycast://extensions/yakitrak/do-not-disturb/toggle?launchType=background`
+      // ),
       // "T"heme
       t: open(`raycast://extensions/raycast/system/toggle-system-appearance`),
       c: open("raycast://extensions/raycast/system/open-camera"),
