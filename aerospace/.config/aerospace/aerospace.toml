@@ -188,7 +188,7 @@ if.app-id = 'org.alacritty'
 # if.app-name-regex-substring = 'settings'
 # if.window-title-regex-substring = 'substring'
 # if.workspace = 'workspace-name'
-if.during-aerospace-startup = false
+if.during-aerospace-startup = true
 # check-further-callbacks = true
 run = ['move-node-to-workspace 1']
 
@@ -197,7 +197,7 @@ if.app-id = 'company.thebrowser.Browser'
 # if.app-name-regex-substring = 'settings'
 # if.window-title-regex-substring = 'substring'
 # if.workspace = 'workspace-name'
-if.during-aerospace-startup = false
+if.during-aerospace-startup = true
 # check-further-callbacks = true
 run = ['move-node-to-workspace 2']
 
@@ -206,7 +206,7 @@ if.app-id = 'com.apple.Notes'
 # if.app-name-regex-substring = 'settings'
 # if.window-title-regex-substring = 'substring'
 # if.workspace = 'workspace-name'
-if.during-aerospace-startup = false
+if.during-aerospace-startup = true
 # check-further-callbacks = true
 run = ['move-node-to-workspace 9']
 
@@ -215,7 +215,7 @@ if.app-id = 'md.obsidian'
 # if.app-name-regex-substring = 'settings'
 # if.window-title-regex-substring = 'substring'
 # if.workspace = 'workspace-name'
-if.during-aerospace-startup = false
+if.during-aerospace-startup = true
 # check-further-callbacks = true
 run = ['move-node-to-workspace 9']
 
@@ -224,7 +224,7 @@ if.app-id = 'com.cron.electron'
 # if.app-name-regex-substring = 'settings'
 # if.window-title-regex-substring = 'substring'
 # if.workspace = 'workspace-name'
-if.during-aerospace-startup = false
+if.during-aerospace-startup = true
 # check-further-callbacks = true
 run = ['move-node-to-workspace 4']
 
@@ -233,7 +233,7 @@ if.app-id = 'com.superhuman.electron'
 # if.app-name-regex-substring = 'settings'
 # if.window-title-regex-substring = 'substring'
 # if.workspace = 'workspace-name'
-if.during-aerospace-startup = false
+if.during-aerospace-startup = true
 # check-further-callbacks = true
 run = ['move-node-to-workspace 4']
 
