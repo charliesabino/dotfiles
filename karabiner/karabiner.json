@@ -508,11 +508,12 @@
                                         "value": 1
                                     }
                                 ],
+                                "description": "Open raycast://extensions/mattisssa/spotify-player/togglePlayPause",
                                 "from": {
                                     "key_code": "p",
                                     "modifiers": { "optional": ["any"] }
                                 },
-                                "to": [{ "key_code": "play_or_pause" }],
+                                "to": [{ "shell_command": "open raycast://extensions/mattisssa/spotify-player/togglePlayPause" }],
                                 "type": "basic"
                             },
                             {
@@ -544,22 +545,6 @@
                                     "modifiers": { "optional": ["any"] }
                                 },
                                 "to": [{ "shell_command": "open raycast://extensions/thomas/elgato-key-light/toggle?launchType=background" }],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "hyper_sublayer_s",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "description": "Open raycast://extensions/yakitrak/do-not-disturb/toggle?launchType=background",
-                                "from": {
-                                    "key_code": "d",
-                                    "modifiers": { "optional": ["any"] }
-                                },
-                                "to": [{ "shell_command": "open raycast://extensions/yakitrak/do-not-disturb/toggle?launchType=background" }],
                                 "type": "basic"
                             },
                             {
@@ -1208,25 +1193,6 @@
                     }
                 ]
             },
-            "devices": [
-                {
-                    "identifiers": {
-                        "is_keyboard": true,
-                        "is_pointing_device": true,
-                        "product_id": 591,
-                        "vendor_id": 1452
-                    },
-                    "ignore": false
-                },
-                {
-                    "identifiers": {
-                        "is_keyboard": true,
-                        "product_id": 50504,
-                        "vendor_id": 1133
-                    },
-                    "ignore": true
-                }
-            ],
             "name": "Default",
             "virtual_hid_keyboard": { "keyboard_type_v2": "ansi" }
         }

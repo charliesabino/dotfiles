@@ -1,13 +1,12 @@
 echo "Installing commandline tools..."
 xcode-select --install
 
-
 echo "Installing Brew..."
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew analytics off
 
-
-defaults write com.apple.dock static-only -bool true; killall Dock
+defaults write com.apple.dock static-only -bool true
+killall Dock
 defaults write -g InitialKeyRepeat -int 15
 defaults write -g KeyRepeat -int 1
 defaults write -g ApplePressAndHoldEnabled -bool false

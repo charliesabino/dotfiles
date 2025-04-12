@@ -17,6 +17,8 @@ alias nl='NVIM_APPNAME=lazy_nvim nvim'
 alias sz='source ~/.zshrc'
 alias ez='nv ~/.zshrc'
 
+alias gs='git status'
+
 # alias tn="tmux new -s (pwd | sed 's/.*\///g')"
 # alias mkcd='mkdir -p "$1" && cd "$1"'
 tn() { tmux new -s "$(pwd | sed 's/.*\///g')"; }
@@ -36,8 +38,9 @@ export PATH="/Users/charliesabino/.local/bin:$PATH"
 export XDG_CONFIG_HOME="$HOME/.config"
 
 # Load and initialise completion system
-autoload -Uz compinit
-compinit
+# autoload -Uz compinit
+# compinit
+
 export PATH="/usr/local/texlive/2025/bin/universal-darwin/:$PATH"
 export PATH="/opt/homebrew/opt/protobuf@21/bin:$PATH"
 
@@ -72,7 +75,6 @@ zinit light zsh-users/zsh-autosuggestions
 zi light z-shell/F-Sy-H # syntax highlighting
 
 ### End of Zinit's installer chunk
-
 . "$HOME/.atuin/bin/env"
 
 eval "$(atuin init zsh --disable-up-arrow)"
