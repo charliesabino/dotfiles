@@ -1,3 +1,5 @@
+eval (/opt/homebrew/bin/brew shellenv)
+
 alias nv nvim
 alias c clear
 alias ls lsd
@@ -28,9 +30,9 @@ function y
     rm -f -- "$tmp"
 end
 
-eval (/opt/homebrew/bin/brew shellenv)
 set -U fish_greeting
 starship init fish | source
 zoxide init fish | source
+atuin init fish --disable-up-arrow | source
 set -U fish_key_bindings fish_vi_key_bindings
 set -Ux EDITOR nvim
