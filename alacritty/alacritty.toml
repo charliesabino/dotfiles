@@ -55,6 +55,11 @@ chars = "\u0002\""
 key = "\\"
 mods = "Command"
 
+[[keyboard.bindings]]
+chars = " ff"
+key = "p"
+mods = "Command"
+
 [window]
 decorations = "buttonless"
 dynamic_padding = true
@@ -72,14 +77,14 @@ foreground = '#bbc2cf'
 
 # Normal colors
 [colors.normal]
-black   = '#282c34'
-red     = '#ff6c6b'
-green   = '#98be65'
-yellow  = '#ecbe7b'
-blue    = '#51afef'
+black = '#282c34'
+red = '#ff6c6b'
+green = '#98be65'
+yellow = '#ecbe7b'
+blue = '#51afef'
 magenta = '#c678dd'
-cyan    = '#46d9ff'
-white   = '#bbc2cf'
+cyan = '#46d9ff'
+white = '#bbc2cf'
 
 [general]
 live_config_reload = true
