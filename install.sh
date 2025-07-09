@@ -10,11 +10,14 @@ killall Dock
 # hide desktop icons
 defaults write com.apple.finder CreateDesktop false
 killall Finder
+
 defaults write -g InitialKeyRepeat -int 15
 defaults write -g KeyRepeat -int 1
+
 defaults write -g ApplePressAndHoldEnabled -bool false
 defaults write com.apple.spaces spans-displays -bool true && killall SystemUIServer
 defaults write com.apple.dock expose-group-apps -bool true && killall Dock
+defaults write -g NSWindowShouldDragOnGesture -bool true
 
 brew install tmux
 brew install stow
