@@ -173,6 +173,8 @@ const rules: KarabinerRules[] = [
     // r = "Raycast"
     r: {
       q: open("raycast://extensions/mackopes/quit-applications/index"),
+      d: open("raycast://extensions/thomas/downloads-manager/manage-downloads"),
+      f: open("raycast://extensions/raycast/file-search/search-files"),
       e: open(
         "raycast://extensions/raycast/emoji-symbols/search-emoji-symbols"
       ),
@@ -185,30 +187,6 @@ const rules: KarabinerRules[] = [
       n: open("raycast://extensions/raycast/apple-notes/index"),
     },
   }),
-  {
-    description: "Change Backspace to Spacebar when Minecraft is focused",
-    manipulators: [
-      {
-        type: "basic",
-        from: {
-          key_code: "delete_or_backspace",
-        },
-        to: [
-          {
-            key_code: "spacebar",
-          },
-        ],
-        conditions: [
-          {
-            type: "frontmost_application_if",
-            file_paths: [
-              "^/Users/mxstbr/Library/Application Support/minecraft/runtime/java-runtime-gamma/mac-os-arm64/java-runtime-gamma/jre.bundle/Contents/Home/bin/java$",
-            ],
-          },
-        ],
-      },
-    ],
-  },
 ];
 
 fs.writeFileSync(
