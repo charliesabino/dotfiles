@@ -60,6 +60,16 @@ chars = " ff"
 key = "p"
 mods = "Command"
 
+[[keyboard.bindings]]
+chars = " e"
+key = "b"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = " bd"
+key = "w"
+mods = "Command|Shift"
+
 [window]
 decorations = "buttonless"
 dynamic_padding = true
