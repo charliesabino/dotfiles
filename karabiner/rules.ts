@@ -183,7 +183,7 @@ const rules: KarabinerRules[] = [
       ),
       p: open("raycast://extensions/raycast/raycast/confetti"),
       a: open("raycast://extensions/raycast/raycast-ai/ai-chat"),
-      s: open("raycast://extensions/peduarte/silent-mention/index"),
+      s: open("raycast://extensions/finjo/whisper-dictation/dictate-simple"),
       h: open(
         "raycast://extensions/raycast/clipboard-history/clipboard-history"
       ),
