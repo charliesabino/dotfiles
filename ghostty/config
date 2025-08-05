@@ -42,7 +42,7 @@ window-height = 9999
 
 
 # visuals
-font-family = "Liga SFMono Nerd Font"
+# font-family = "SF Mono"
 font-family = "CommitMono"
 
 font-size = 20
