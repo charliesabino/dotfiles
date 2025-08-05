@@ -41,7 +41,7 @@ key = "w"
 mods = "Command"
 
 [[keyboard.bindings]]
-chars = "\u0002o"
+chars = "\u0002T"
 key = "k"
 mods = "Command"
 
