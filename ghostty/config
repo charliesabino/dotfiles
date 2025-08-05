@@ -160,5 +160,5 @@ keybind = super+shift+k=text:\x02\x52
 # keybind = super+shift+y=
 # keybind = super+shift+z=
 
-keybind = super+shift+right_bracket=text:\x02\x6e
-keybind = super+shift+left_bracket=text:\x02\x70
+keybind = super+shift+right_bracket=text:\x02n
+keybind = super+shift+left_bracket=text:\x02p
