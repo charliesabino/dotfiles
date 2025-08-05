@@ -61,7 +61,7 @@ const rules: KarabinerRules[] = [
       l: open("https://leetcode.com/problemset/"),
       g: open("https://github.com/"),
       y: open("https://www.youtube.com/"),
-      y: open("https://www.chat.com/"),
+      c: open("https://www.chat.com/"),
     },
     // o = "Open" applications
     o: {
