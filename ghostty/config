@@ -14,7 +14,8 @@
 # https://github.com/ghostty-org/ghostty/security/advisories/GHSA-5hcq-3j4q-4v6p
 title = Ghostty
 
-custom-shader = shaders/starfield-colors.glsl
+# idk what this does
+# custom-shader = shaders/starfield-colors.glsl
 
 ###########
 ## shell ##
@@ -142,26 +143,22 @@ keybind = super+w=text:\x02\x78
 # keybind = super+shift+g=
 # keybind = super+shift+h=
 # keybind = super+shift+i=
-# secondary sesh
+
 # keybind = super+shift+j=
 keybind = super+shift+k=text:\x02\x52
 # keybind = super+shift+l=
 # keybind = super+shift+m=
 # keybind = super+shift+n=
-# :GotoSymbol
-keybind = super+shift+o=text:\x3a\x47\x6f\x54\x6f\x53\x79\x6d\x62\x6f\x6c\x0a
-# :GotoCommand
-keybind = super+shift+p=text:\x3a\x47\x6f\x54\x6f\x43\x6f\x6d\x6d\x61\x6e\x64\x0a
 # keybind = super+shift+q=
 # keybind = super+shift+r=
 # keybind = super+shift+s=
 # keybind = super+shift+t=
 # keybind = super+shift+u=
 # keybind = super+shift+v=
-# keybind = super+shift+w= (undo close?)
+# keybind = super+shift+w=
 # keybind = super+shift+x=
 # keybind = super+shift+y=
-# keybind = super+shift+z= (redo?)
+# keybind = super+shift+z=
 
 keybind = super+shift+right_bracket=text:\x02\x6e
 keybind = super+shift+left_bracket=text:\x02\x70
