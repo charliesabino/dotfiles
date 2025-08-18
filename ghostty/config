@@ -91,8 +91,6 @@ keybind = super+physical:nine=text:\x029
 keybind = super+c=text:\x02[
 # keybind = super+d=
 # keybind = super+e=
-# :Grep (find)
-keybind = super+f=text:\x3a\x47\x72\x65\x70\x0a
 # <prefix>+g (open lazygit window)
 keybind = super+g=text:\x02\x67
 # hide?
