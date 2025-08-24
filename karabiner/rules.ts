@@ -67,7 +67,7 @@ const rules: KarabinerRules[] = [
     o: {
       s: app("Superhuman"),
       a: app("Anki"),
-      t: app("Alacritty"),
+      t: app("Ghostty"),
       c: app("Notion Calendar"),
       b: app("Arc"),
       f: app("Finder"),
